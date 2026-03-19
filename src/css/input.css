@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* boxmin - back to top button */
+.testimonials-slider .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    text-align: center;
+    opacity: .25;
+    background-color: rgb(235, 235, 235);
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    margin-top: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: 1;
+}
+
+.testimonials-slider .slick-dots li button:before:hover {
+    opacity: 1;
+}
+
+
+.testimonials-slider .slick-dots li.slick-active button:before {
+    background-color: #006bff;
+    width: 17px;
+    margin-left: -5px;
+    border-radius: 20px;
+}
