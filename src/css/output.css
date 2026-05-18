@@ -11,13 +11,9 @@
     --color-green-800: oklch(44.8% 0.119 151.328);
     --color-cyan-200: oklch(91.7% 0.08 205.041);
     --color-blue-50: oklch(97% 0.014 254.604);
-    --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
-    --color-slate-700: oklch(37.2% 0.044 257.287);
-    --color-slate-800: oklch(27.9% 0.041 260.031);
-    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -1989,6 +1985,11 @@
       background-image: url('../img/check-mark-svgrepo-com.svg');
     }
   }
+  .checked\:bg-\[url\(\'\.\/img\/check-mark-svgrepo-com\.svg\'\)\] {
+    &:checked {
+      background-image: url('./img/check-mark-svgrepo-com.svg');
+    }
+  }
   .checked\:bg-\[length\:12px_12px\] {
     &:checked {
       background-size: 12px 12px;
@@ -2861,9 +2862,9 @@
       background-color: transparent;
     }
   }
-  .xl\:bg-\[url\(\.\.\/img\/shape-dotted-light\.svg\)\] {
+  .xl\:bg-\[url\(\.\/img\/shape-dotted-light\.svg\)\] {
     @media (width >= 80rem) {
-      background-image: url(../img/shape-dotted-light.svg);
+      background-image: url(./img/shape-dotted-light.svg);
     }
   }
   .xl\:p-0 {
@@ -3720,10 +3721,10 @@
       }
     }
   }
-  .xl\:dark\:bg-\[url\(\.\.\/img\/shape-dotted-dark\.svg\)\] {
+  .xl\:dark\:bg-\[url\(\.\/img\/shape-dotted-dark\.svg\)\] {
     @media (width >= 80rem) {
       &:where(.dark, .dark *) {
-        background-image: url(../img/shape-dotted-dark.svg);
+        background-image: url(./img/shape-dotted-dark.svg);
       }
     }
   }
